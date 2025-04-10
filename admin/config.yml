@@ -60,6 +60,7 @@ collections: # A list of collections the CMS should be able to edit.  See here f
       - label: Drafts
         field: draft
     fields: # The fields each document in this collection have
+      - { label: 'Categories', name: 'categories', widget: 'hidden', default: 'Blog'}
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
       - {
@@ -69,6 +70,7 @@ collections: # A list of collections the CMS should be able to edit.  See here f
           format: 'YYYY-MM-DD HH:mm',
           default: '{{now}}',
         }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: ["blog"] }
       - label: 'Cover Image'
         name: 'image'
         widget: 'image'
