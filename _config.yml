@@ -13,16 +13,32 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
-search: true
+
+locale                   : "en-US"
+rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+title                    : Escaping Amazon (test)
+title_separator          : "-"
+subtitle                 : "Enshittification Optional" # site tagline that appears below site title in masthead
+email                    :
+description              : >- # this means to ignore newlines until "baseurl:"
+  DIY, off-the-shelf and open-source alternatives to the Amazon Ecosystem.
+twitter_username         : #omitted
+github_username          : #omitted
+minimal_mistakes_skin    : sunrise # default, air, aqua, contrast, dark, neon, mint, plum, sunrise
+search                   : true
+
+url                      : "https://EscapingAmazon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "EscapingAmazon/mm-starter" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : # true, false (default)
+words_per_minute         : 200
+enable_copy_code_button  : # true, false (default)
+copyright                : # "copyright" name, defaults to site.title
+copyright_url            : # "copyright" URL, defaults to site.url
+
 
 # Build settings
 markdown: kramdown
