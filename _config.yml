@@ -27,12 +27,9 @@ twitter_username         : #omitted
 github_username          : #omitted
 minimal_mistakes_skin    : sunrise # default, air, aqua, contrast, dark, neon, mint, plum, sunrise
 
-### User Function
-breadcrumbs              : true # true, false (default)
-words_per_minute         : 200
+
 
 ### Background variables
-
 url                      : "https://EscapingAmazon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "EscapingAmazon/mm-starter" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -47,11 +44,27 @@ copyright_url            : # "copyright" URL, defaults to site.url
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+
+### Outputting
+permalink                : /:categories/:title/
+breadcrumbs              : true # true, false (default)
+timezone                 : # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+paginate: 5 # amount of posts to show https://mmistakes.github.io/minimal-mistakes/docs/configuration/#paginate
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# TODO: set up jekyll paginate v2
+
+
+
+category_archive: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#archive-settings
+  type: liquid # must be liquid with Github Pages
+  path: /categories/
+tag_archive:
+  type: liquid # must be liquid with Github Pages
+  path: /tags/
+
+
+
+### Jekyll Build info
 
 include:
   - _pages
@@ -68,14 +81,23 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Plugins (previously gems:)
-plugins:
+### Plugins (previously gems:)
+plugins: # Limited by what Github Pages allows
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+### Optimization:
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
 
 ### Site Author
 # TODO: Add second author. https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-author
@@ -112,6 +134,7 @@ footer:
     #   url: "https://instagram.com/"
 
 ### Post Front Matter defaults https://mmistakes.github.io/minimal-mistakes/docs/configuration/#front-matter-defaults
+words_per_minute         : 200
 defaults:
   # _posts
   - scope:
@@ -142,12 +165,7 @@ defaults:
 
       
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+
 
 ### Search:
 search                   : true # true, false (default)
