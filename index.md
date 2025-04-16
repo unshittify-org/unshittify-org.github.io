@@ -11,7 +11,7 @@ layout: splash
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-#   overlay_image: /assets/logos/Header.png
+  overlay_image: /assets/logos/Header2_replace.png
   actions:
     - label: "Our Goals"
       url: "/mission-statement/"
@@ -26,7 +26,7 @@ feature_row:
     # image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "placeholder image 1"
     title: "Our Home"
-    excerpt: "A blog discussing the work we've done to counter the enshittification in our home."
+    excerpt: "A blog discussing the work done to counter the enshittification in our home."
   - image_path: assets/logos/Header.png
     alt: "placeholder image 2"
     title: "The Outhouse"
