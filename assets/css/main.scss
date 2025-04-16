@@ -5,7 +5,7 @@ search: false
 @charset "utf-8";
 
 // Custom colors
-$light_main: #E8D5B7;
+$light_main: lighten(#E8D5B7,7%);
 $medium_main: #F9B248;
 $bright_main: #E68000;
 $dark_main: #954929;
@@ -13,13 +13,16 @@ $black_main: #3A1820;
 $dark_accent: #85394C;
 $medium_accent: #DB849A;
 $light_accent: #EEDDDD;
+$white_main: $light_accent;
 
 // Color Tweaks
 
+$background-color: $light_main; //very similar to sunrise
+$footer-background-color: $medium_main; //very similar to sunrise
 $primary-color: $dark_accent; //For Buttons
 $text_color: $black_main;
 $yiq-contrasted-dark-default: $black_main;
-$yiq-contrasted-light-default: $light_accent;
+$yiq-contrasted-light-default: $white_main;
 
 
 
