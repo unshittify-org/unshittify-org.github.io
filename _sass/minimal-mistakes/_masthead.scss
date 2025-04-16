@@ -14,7 +14,7 @@
   &__inner-wrap {
     @include clearfix;
     margin-inline: auto;
-    padding: .3em;
+    padding: .3em; //Modified
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
