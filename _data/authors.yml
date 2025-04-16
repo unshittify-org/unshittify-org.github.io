@@ -1,0 +1,23 @@
+# /_data/authors.yml
+
+Tatiana:
+  name        : "Tatiana"
+  bio         : "A Mechanical Engineer focusing with a focus on prototyping, test process design, and technical writing."
+  links       :
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tatianaanthony"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
+
+
+Judebert:
+  name        : "Judebert"
+  bio         : "A software developer with over 30 years of experience"

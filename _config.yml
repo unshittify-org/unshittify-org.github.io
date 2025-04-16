@@ -102,23 +102,23 @@ compress_html:
 ### Site Author
 # TODO: Add second author. https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-author
 
-author:
-  name   : "Tatiana Anthony"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "A Mechanical Engineer focusing with a focus on prototyping, test process design, and technical writing."
-  links:
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/tatianaanthony"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
+author: Tatiana
+  # name   : "Tatiana Anthony"
+  # avatar : "/assets/images/bio-photo.jpg"
+  # bio    : "A Mechanical Engineer focusing with a focus on prototyping, test process design, and technical writing."
+  # links:
+  #   # - label: "Website"
+  #   #   icon: "fas fa-fw fa-link"
+  #   #   url: "https://"
+  #   # - label: "Twitter"
+  #   #   icon: "fab fa-fw fa-twitter-square"
+  #   #   url: "https://twitter.com/"
+  #   - label: "GitHub"
+  #     icon: "fab fa-fw fa-github"
+  #     url: "https://github.com/tatianaanthony"
+  #   # - label: "Instagram"
+  #   #   icon: "fab fa-fw fa-instagram"
+  #   #   url: "https://instagram.com/"
 
 ### Footer
 footer:
