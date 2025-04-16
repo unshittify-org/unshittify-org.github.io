@@ -17,9 +17,9 @@
 ### Basic appearance stuff
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : Escaping Amazon (test)
-title_separator          : "-"
-subtitle                 : "Enshittification Optional" # site tagline that appears below site title in masthead
+title                    : "" #Escaping Amazon (test)
+title_separator          : "" #"-"
+subtitle                 : "" #"Enshittification Optional" # site tagline that appears below site title in masthead
 email                    :
 description              : >- # this means to ignore newlines until "baseurl:"
   DIY, off-the-shelf and open-source alternatives to the Amazon Ecosystem.
@@ -34,7 +34,7 @@ url                      : "https://EscapingAmazon.github.io" # the base hostnam
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "EscapingAmazon/mm-starter" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/logos/PrelimLogo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/logos/Unshittify__Page_2_logo_transparent.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
