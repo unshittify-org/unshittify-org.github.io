@@ -175,6 +175,7 @@ collections: # A list of collections the CMS should be able to edit.  See here f
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
       - { label: 'Permalink', name: 'permalink', widget: 'string', hint: 'Often "/title.html". Use a-z/1_9 only', required: true}
+      - { label: 'Layout', name: 'layout', widget: 'select', options: ["archive-taxonomy","archive","categories","category","collection","compress","default","home","posts","search","single","splash","tag","tags"]}
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
 
 

@@ -133,6 +133,15 @@ footer:
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
 
+### Collections
+collections:
+  # Posts has defaults
+  # Pages has defaults
+  about:
+    output: true
+    permalink: /:collection/:path/
+
+
 ### Post Front Matter defaults https://mmistakes.github.io/minimal-mistakes/docs/configuration/#front-matter-defaults
 words_per_minute         : 200
 defaults:
@@ -155,6 +164,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _about
+  - scope:
+      path: "_about"
+      type: about
+    values:
+      layout: single
+      author_profile: false
   ## _other_folder
   # - scope:
   #     path: "_foo"
