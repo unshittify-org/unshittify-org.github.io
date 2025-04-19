@@ -26,7 +26,34 @@ site_url: https://escapingamazon.github.io
 
 
 publish_mode: editorial_workflow
-media_folder: images/uploads
+media_folder: /assets/images
+
+aliases:
+  - &BODY {name: 'body',
+        label: 'Body',
+        widget: 'markdown'}
+  - &HERO {label: 'Header', 
+          name: 'header',
+          required: false,
+          widget: object,
+          fields: [
+            {label: 'Image', name: 'overlay_image', widget: 'image', allow_multiple: false, required: false},
+            {label: 'Teaser', name: 'teaser', widget: 'image', allow_multiple: false, required: false},
+            {label: 'Overlay Color', name: 'overlay_color', widget: 'color', default: '#000000', allowInput: true, required: false, hint: 'Required if using an image'},
+            {label: 'Overlay Filter', name: 'overlay_filter', widget: 'number', default: 0, value_type: float, min: 0, max: 1, step: .05, required: false, hint: 'Required if using an image. 0 = No Overlay, 1 = Opaque Overlay'},
+            {label: 'Actions', name: 'actions', widget: list, optional: true, fields: [
+              {label: 'Button Label', name: 'label', widget: string},
+              {label: 'Button URL', name: 'url', widget: string, hint: 'Usually in the form ```/collection/page-name/```, which goes after the primary URL. Can also be an external URL'}
+              ]
+            }
+            ]
+          }
+  - &TOC {label: "Use TOC", 
+          name: 'toc', 
+          widget: 'boolean', 
+          default: false}
+  - &TOC_STICK {label: "Sticky TOC", name: 'toc_sticky', widget: 'boolean', default: false, required: false}
+  - &TOC_LABEL {label: "TOC Label", name: 'toc_label', widget: 'string', default: "Table of Contents", required: false}
 
 collections: # A list of collections the CMS should be able to edit.  See here for how to use collections: https://ben.balter.com/2015/02/20/jekyll-collections/
   - name: 'posts' # Used in routes, ie.: /admin/collections/:slug/edit
@@ -173,12 +200,39 @@ collections: # A list of collections the CMS should be able to edit.  See here f
         pattern: false
     fields: # The fields each document in this collection have
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
-      - { label: 'Permalink', name: 'permalink', widget: 'string', hint: 'Often "/title.html". Use a-z/1_9 only', required: true}
-      - { label: 'Layout', name: 'layout', widget: 'select', options: ["archive-taxonomy","archive","categories","category","collection","compress","default","home","posts","search","single","splash","tag","tags"]}
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+      - << : *HERO
+      - {label: 'Tagline', name: 'tagline', required: False, widget: 'text'}
+      - << : *TOC
+      - << : *TOC_STICK
+      - << : *TOC_LABEL
+      - << : *BODY
+     
+      # - label: 'Header' 
+      #   name: 'header'
+      #   widget: object
+      #   fields:
+      #   - {label: 'Image', name: 'image', widget: 'image', allow_multiple: false,required: false}
+      #   - {label: 'Teaser', name: 'teaser', widget: 'image', allow_multiple: false,required: false}
+      # - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
+      # - { label: 'Layout', name: 'layout', widget: 'select', options: ["archive-taxonomy","archive","categories","category","collection","compress","default","home","posts","search","single","splash","tag","tags"]}
+      # - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
 
-
+  - name: tester
+    label: tester
+    folder: _tester
+    create: true
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      # - name: categories
+      #   label: Categories
+      #   widget: categories
+      #   separator: __
+      - << : *HERO
+      - name: 'body'
+        label: 'Body'
+        widget: 'markdown'
 
 
 
