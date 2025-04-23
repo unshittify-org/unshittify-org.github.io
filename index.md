@@ -14,12 +14,12 @@ header:
   overlay_image: /assets/logos/Header2_replace.png
   actions:
     - label: "Our Goals"
-      url: "/mission-statement/"
-    - label: "About the Authors"
       url: "/about/"
+    - label: "About the Authors"
+      url: "/about/authors"
 #   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "Resources, links, and discussion to help you reclaim your life from enshittification."
-intro: 
+intro:
   - excerpt: "Companies are squeezing every penny of profit out of us, at the expense of our convenience, privacy, and control. \n \n We don't have to let them."
 feature_row:
   - image_path: assets/logos/Header.png
@@ -27,40 +27,46 @@ feature_row:
     alt: "placeholder image 1"
     title: "Our Home"
     excerpt: "A blog discussing the work done to counter the enshittification in our home."
+    url: "/posts/"
+    btn_label: "To Posts"
+    btn_class: "btn--primary"
   - image_path: assets/logos/Header.png
     alt: "placeholder image 2"
     title: "The Outhouse"
     excerpt: "Companies, services, and products that suffer from enshittification or regressive social policies - and what we suggest you use instead."
-    url: "#test-link"
+    url: "/outhouse/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: assets/logos/Header.png
-    title: "Product and Company Standards"
+    title: "Lesser Evil, Greater Good"
     excerpt: "What we look for in the products and companies that we recommend."
+    url: "/about/metrics"
+    btn_label: "To Metrics"
+    btn_class: "btn--info"
 feature_row2:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Placeholder Image Left Aligned"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+    # url: "#test-link"
+    # btn_label: "Read More"
+    # btn_class: "btn--primary"
 feature_row3:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Placeholder Image Right Aligned"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+    # url: "#test-link"
+    # btn_label: "Read More"
+    # btn_class: "btn--primary"
 feature_row4:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Placeholder Image Center Aligned"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+    # url: "#test-link"
+    # btn_label: "Read More"
+    # btn_class: "btn--primary"
 ---
 
 {% include feature_row id="intro" type="center" %}
