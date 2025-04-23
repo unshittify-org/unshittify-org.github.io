@@ -35,7 +35,7 @@ feature_row:
     title: "The Outhouse"
     excerpt: "Companies, services, and products that suffer from enshittification or regressive social policies - and what we suggest you use instead."
     url: "/outhouse/"
-    btn_label: "Read More"
+    btn_label: "To the Outhouse"
     btn_class: "btn--primary"
   - image_path: assets/logos/Header.png
     title: "Lesser Evil, Greater Good"
