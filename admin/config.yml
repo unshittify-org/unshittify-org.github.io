@@ -4,8 +4,8 @@ local_backend: true
 # Use DecapBridge auth (required)
 backend:
   name: git-gateway
-  repo: EscapingAmazon/mm-starter
-  branch: setup
+  repo: unshittify-org/unshittify-org.github.io
+  branch: drafts
   # identity_url: https://auth.decapbridge.com/sites/4ee4960b-ba15-45fc-9f87-e394942b98ad
   # gateway_url: https://gateway.decapbridge.com
 
@@ -22,7 +22,7 @@ backend:
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
 # Add site links in DecapCMS (optional)
-site_url: https://escapingamazon.github.io
+site_url: https://unshittify-org.github.io
 
 
 publish_mode: editorial_workflow
