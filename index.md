@@ -42,7 +42,7 @@ feature_row:
     excerpt: "What we look for in the products and companies that we recommend."
     url: "/about/metrics"
     btn_label: "To Metrics"
-    btn_class: "btn--info"
+    btn_class: "btn--primary" #"btn--info"
 feature_row2:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
@@ -73,8 +73,12 @@ feature_row4:
 
 {% include feature_row %}
 
-{% include feature_row id="feature_row2" type="left" %}
+{% comment %} 
+    These commments will not include inside the source.
 
-{% include feature_row id="feature_row3" type="right" %}
+    {% include feature_row id="feature_row2" type="left" %}
 
-{% include feature_row id="feature_row4" type="center" %}
+    {% include feature_row id="feature_row3" type="right" %}
+
+    {% include feature_row id="feature_row4" type="center" %}
+{% endcomment %}
