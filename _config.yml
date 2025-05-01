@@ -135,9 +135,12 @@ footer:
 
 ### Collections
 collections:
-  # Posts has defaults
+  # Posts has defaults.  Posts is the blog.
   # Pages has defaults
   about:
+    output: true
+    permalink: /:collection/:path/
+  outhouse: # All the bad stuff we're trying to replace
     output: true
     permalink: /:collection/:path/
 
@@ -171,6 +174,17 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _outhouse
+  - scope:
+      path: ""
+      type: outhouse
+    values:
+      layout: wide
+      # author_profile: false
+      # read_time: true
+      # comments: true
+      # share: true
+      # related: true
   ## _other_folder
   # - scope:
   #     path: "_foo"
