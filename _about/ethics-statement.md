@@ -16,7 +16,7 @@ toc_sticky: true
 
 ![A clip-art magnifying glass with a checkmark](/assets/images/ethics_of_open_sharing_icon_-_transparency.svg){: .align-left .width-small}
 
-Unshittify makes statements about companies, products, and services that:
+Unshittify makes subjective statements about companies, products, and services that:
 
 * Evaluate them for the priorities documented in our [Mission Statement](/about/mission-statement) and [Metrics](/about/metrics)
 * Suggest alternatives that we believe are more aligned with our priorities
