@@ -14,11 +14,11 @@ toc_sticky: true
 ---
 ## Transparency Statement
 
-![A clip-art magnifying glass with a checkmark](/assets/images/ethics_of_open_sharing_icon_-_transparency.svg){: .align-left}
+![A clip-art magnifying glass with a checkmark](/assets/images/ethics_of_open_sharing_icon_-_transparency.svg){: .align-left .width-small}
 
 Unshittify makes statements about companies, products, and services that:
 
-* Evaluate them for the priorities documented in our [Mission Statement](<>) and [Methodology](<>)
+* Evaluate them for the priorities documented in our [Mission Statement](/about/mission-statement) and [Metrics](/about/metrics)
 * Suggest alternatives that we believe are more aligned with our priorities
 * Instruct readers on how to switch to the alternatives we suggest, or leave the originals if they find another alternative they prefer.
 
@@ -30,7 +30,7 @@ When we make evaluations, suggestions, or instructions, we will:
 
 ## Conflict of Interest Statement
 
-![A clip-art warning symbol - a triangle with rounded corners and an exclamation point](/assets/images/ethics_of_open_sharing_icon_-_risk.svg)
+![A clip-art warning symbol - a triangle with rounded corners and an exclamation point](/assets/images/ethics_of_open_sharing_icon_-_risk.svg){: .align-left .width-small}
 
 Because we are recommending and direcommending products, we are aware of the potential for conflicts of interest that could degrade trust in our judgement.
 
@@ -51,19 +51,20 @@ Additionally, we will have a page listing all past sponsorships available here.
 
 ## Retraction Policy
 
-![](/assets/images/ethics_of_open_sharing_icon_-_consent.svg)
+![](/assets/images/ethics_of_open_sharing_icon_-_consent.svg){: .align-left .width-small}
 
 Where we retract a recommendation, we will:
 
-* Maintain an archive of the pre-retraction version of the relevant page, with a warning at the top that content may be inaccurate.
-* Update the relevant page, and include a link at the top of the page to the archived, pre-retraction version of the page
-* Replace any now-empty pages with notices that indicate that the age was fully retracted, and link to the archived, pre-retraction version of each page[](<>)
+* Maintain an [archive](/retractions/) of the pre-retraction version of the relevant page, with a warning at the top that content may be inaccurate.
+* [Update the relevant page](/retractions/example-archive), and include a link at the top of the page to the archived, pre-retraction version of the page.
+* [Replace any now-empty pages](/retractions/example-removal) with notices that indicate that the page was fully retracted, and link to the archived, pre-retraction version of each page.
+
 
 ## AI Usage Policy
 
-![](/assets/images/ethics_of_open_sharing_icon_-_diversity.svg)
+![](/assets/images/ethics_of_open_sharing_icon_-_diversity.svg){: .align-left .width-small}
 
-As always, the priorities from our [Mission Statement](<>) and [Methodology](<>) guide our usage of any technology, including Generative AI.
+As always, the priorities from our [Mission Statement](/about/mission-statement) and [Metrics](/about/metrics) guide our usage of any technology, including Generative AI.
 
 There have been plenty of discussions from plenty of people much more informed than us about the ethical concerns around the use of Generative AI. These concerns include issues we prioritize, such as worker rights, data privacy, and and consumer rights.
 
