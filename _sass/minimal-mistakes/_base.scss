@@ -181,6 +181,25 @@ li ol {
   margin-top: 0.5em;
 }
 
+/* Fix lists collapsing into images they wrap around */
+ul,
+ol {
+  overflow: auto;
+}
+
+/* Alternative way to fix lists collapsing into images they wrap around */
+// ul:not([class]),
+// ol:not([class]) {
+//     padding-left: 0;
+//     padding-right: 2.5em;
+// }
+// ul:not([class]) li,
+// ol:not([class]) li {
+//     transform: translateX(2.5em);
+//     animation: fixlists 1s;
+// }
+
+
 /*
    Media and embeds
    ========================================================================== */
