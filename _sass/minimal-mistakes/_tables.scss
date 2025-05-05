@@ -16,7 +16,8 @@ table {
   }
 }
 
-thead {
+thead,
+th {
   background-color: $border-color;
   border-bottom: 2px solid mix(#000, $border-color, 25%);
 }
