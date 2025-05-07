@@ -63,6 +63,16 @@ h6 {
   color: $medium-accent;
 }
 
+summary h1,
+summary h2,
+summary h3,
+summary h4,
+summary h5,
+summary h6 {
+  display: inline;
+  margin: .5em 0 0.5em;
+}
+
 small,
 .small {
   font-size: $type-size-6;
