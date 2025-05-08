@@ -1,6 +1,8 @@
 /* ==========================================================================
    TABLES
    ========================================================================== */
+$header-background-color: $border-color;
+$cell-border-color: mix($dark-accent, $header-background-color, 25%);
 
 table {
   display: block;
@@ -18,8 +20,8 @@ table {
 
 thead,
 th {
-  background-color: $border-color;
-  border-bottom: 2px solid mix(#000, $border-color, 25%);
+  background-color: $header-background-color;
+  border-bottom: 2px solid $cell-border-color;
 }
 
 th {
@@ -30,7 +32,7 @@ th {
 
 td {
   padding: 0.5em;
-  border-bottom: 1px solid mix(#000, $border-color, 25%);
+  border-bottom: 1px solid $cell-border-color;
 }
 
 tr,
@@ -38,3 +40,58 @@ td,
 th {
   vertical-align: middle;
 }
+
+// Making a bordered table style
+.bordered {
+  border: 4px;
+  border-style: solid;
+  border-color: $dark-accent;
+  border-radius: 2px;
+  border-collapse: collapse;
+}
+
+table.bordered {
+  td, th {
+    // set all cells to have a solid border
+    border: 2px solid $cell-border-color; 
+  }
+  tr:first-child *,
+  th:first-child *{
+    // Set first row cells to have no top border
+    border-top: 0;
+  }
+  tr :first-child,
+  th :first-child {
+    // set all rows' first column to have no top border
+    border-left: 0;
+  }
+  tr:last-child *,
+  th:last-child * {
+    // set last row's sells to have no bottom border
+    border-bottom: 0;
+  }
+  tr :last-child,
+  th :last-child {
+    // set all row's last cell to have no right border
+    border-right: 0;
+  }
+}
+
+// table.bordered:first-child{
+//   border: none; // First row has no border
+//   & ~ * {
+//     border-top: solid; //second and further rows have top borders
+//   }
+// }
+
+// table.bordered > * > *:first-child {
+//   border: none; //first child of any row
+//   & ~ * {
+//     border-left: solid 2px black; //second child cell of any row
+//   }
+  
+// }
+
+// .last {
+//   border: none
+// }
