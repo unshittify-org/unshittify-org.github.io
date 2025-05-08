@@ -2,7 +2,7 @@
    TABLES
    ========================================================================== */
 $header-background-color: $border-color;
-$cell-border-color: mix($dark-accent, $header-background-color, 25%);
+$cell-border-color: mix(#000 , $header-background-color, 25%);//mix($dark-accent, $header-background-color, 25%);
 
 table {
   display: block;
@@ -32,13 +32,19 @@ th {
 
 td {
   padding: 0.5em;
-  border-bottom: 1px solid $cell-border-color;
+  border-bottom: 2px solid $cell-border-color;
 }
 
 tr,
 td,
 th {
   vertical-align: middle;
+}
+
+// unbordered table style
+
+.unbordered{
+  border: none;
 }
 
 // Making a bordered table style
@@ -50,6 +56,7 @@ th {
   border-collapse: collapse;
 }
 
+table.unbordered,
 table.bordered {
   td, th {
     // set all cells to have a solid border
@@ -76,22 +83,3 @@ table.bordered {
     border-right: 0;
   }
 }
-
-// table.bordered:first-child{
-//   border: none; // First row has no border
-//   & ~ * {
-//     border-top: solid; //second and further rows have top borders
-//   }
-// }
-
-// table.bordered > * > *:first-child {
-//   border: none; //first child of any row
-//   & ~ * {
-//     border-left: solid 2px black; //second child cell of any row
-//   }
-  
-// }
-
-// .last {
-//   border: none
-// }
