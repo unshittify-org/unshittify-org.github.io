@@ -11,7 +11,7 @@
  */
 
 @mixin notice($notice-color) {
-  margin: 2em 0 !important;  /* override*/
+  margin: 1em 0 !important; // 2em 0 !important;  /* override*/
   padding: 1em;
   color: $text-color;
   font-family: $global-font-family;
@@ -46,10 +46,12 @@
   }
 
   a {
-    color: mix(#000, $notice-color, 10%);
+    text-decoration-thickness: 8%;
+    // text-decoration-skip-ink: none;
+    color: mix(#000, $notice-color, 30%);
 
     &:hover {
-      color: mix(#000, $notice-color, 50%);
+      color: mix(#000, $notice-color, 90%);
     }
   }
 
@@ -75,7 +77,7 @@
 /* Default notice */
 
 .notice {
-  @include notice($light-gray);
+  @include notice($default-notice-color); //default $light-gray
 }
 
 /* Primary notice */

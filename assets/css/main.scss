@@ -4,45 +4,69 @@ search: false
 ---
 @charset "utf-8";
 
+/*CUSTOM VARIABLES*/
+
 // Custom colors
-$light_main: lighten(#E8D5B7,7%);
-$medium_main: #F9B248;
-$bright_main: #E68000;
-$dark_main: #954929;
-$black_main: #3A1820;
-$dark_accent: #85394C;
-$medium_accent: #DB849A;
-$light_accent: #EEDDDD;
-$white_main: $light_accent;
+
+$lightish-main: #E8D5B7;
+$light-main: lighten($lightish-main,7%);
+$medium-main: #F9B248;
+$bright-main: #E68000;
+$dark-main: #954929;
+$black-main: #3A1820;
+$dark-accent: #85394C;
+$medium-accent: #DB849A;
+$light-accent: #EEDDDD;
+$white-main: $light-accent;
 
 // Color Tweaks
 
-$background-color: $light_main; //very similar to sunrise
-$footer-background-color: $medium_main; //very similar to sunrise
-$primary-color: $dark_accent; //For Buttons
-$text_color: $black_main;
-$yiq-contrasted-dark-default: $black_main;
-$yiq-contrasted-light-default: $white_main;
+$background-color: $light-main; //very similar to sunrise
+$footer-background-color: $medium-main; //very similar to sunrise
+
+$text-color: $black-main;
+$yiq-contrasted-dark-default: $black-main;
+$yiq-contrasted-light-default: $white-main;
 $yiq-contrasted-threshold: 128;
 
-$info-color: $medium_accent;
+
+/* Notice and Button Colors */
+
+$notice-background-mix: 60%;
 
 
+$light-gray: #BDC1C4; // Same as default. default notice
+$default-notice-color: $medium-main; //mix($light-gray,$medium-accent,50%) ;//mix($dark-accent,$medium-accent,50%); //lighten($medium-accent,15%);
+$primary-color: $dark-accent; //For Buttons notice--primary
+$info-color: $medium-accent;//notice--info 
+$warning-color: #333; // . notice--warning
+$success-color: #3fa63f; //Same as default success-color. notice--success
+$danger-color: #ff353a; //notice--danger
 
-
-
-
+///////////////////////////////////////////////////////////////////////////////
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-
 
 /*
 GS: override any CSS with new CSS styles AFTER the `@import "minimal-mistakes";` line just above!
 See: https://github.com/mmistakes/minimal-mistakes/issues/1219#issuecomment-326809412
 Anything you place after this point will therefore "cascade and override" the previous CSS styles.
 */
+///////////////////////////////////////////////////////////////////////////////
 
+/* CUSTOM CSS */
+
+
+
+
+
+
+
+
+
+
+/*FONT SIZES*/
+/////////////////////////////////////////////////
 /*
 GS: Decrease font sizes of the entire website.
 Defaults for small, medium, large, and x-large screens are:
@@ -53,6 +77,7 @@ See: https://github.com/mmistakes/minimal-mistakes/issues/1219#issuecomment-3268
 - It looks like the screen pixel sizes to move into each new "size" category are defined in
   the "Breakpoints" section of "_variables.scss"?
 */
+
 html {
     font-size: 18px; 
     //default 0-600 px wide 
@@ -87,4 +112,9 @@ html {
       // default 1280+
       // equivalent to full desktop, pro tablet
     }
+  }
+
+  /* NOTICES */
+  .notice {
+    @include notice($default-notice-color);
   }
