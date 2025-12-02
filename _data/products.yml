@@ -1,0 +1,100 @@
+# /_data/products.yml
+
+#template
+short-name:
+  name        : "Readable Name"
+  alt-names   : # other things people might call this service or product.
+    - medium name
+    - long long long long name
+    - nickname
+  description : "Description of the product or service"
+  company     : "Company Name"
+  grade       : 1 # Does not meet our goals. 
+              # 2 # Do what you got to do. 
+              # 3 # What're you gonna do?/No ethical consumption under capitalism. 
+              # 4 # Good Shit
+              # 5 # Holy Shit
+  enshittification-stage: 1 # Good for users. 
+                        # 2 # Abuse users for business customers. 
+                        # 3 # Abuse business customers for value. 
+                        # 4 # Die.
+  diy-level   : 1 # plug and play. 
+              # 2 # Some assembly required. 
+              # 3 # Needs some techincal/mechanical skill. 
+              # 4 # Ongoing project management required. 
+              # 5 # Requires significant, specialized skill. Not for the average person.
+  risk-level  : 1 # clean hands
+              # 2 # Polished Turd
+              # 3 # Shit Sandwich
+              # 4 # SHITCON 1
+  pros: 
+    - Repairable
+    - Open Source
+    - FOSS
+    - Good Data Privacy
+    - Free
+    - True Ownership
+    - Well-documented
+    - Consumer Rights Protections
+    - One-Time Purchase
+  neutrals:
+    - One-Time Purchase
+    - Reasonable Subscription
+    - Repair Limitations
+  cons:
+    - Proprietary Software/Hardware
+    - Planned Obsolesence
+    - Greedy Subscription
+    - Excess Data Collection
+    - Consumer Rights Violations
+    - Feature Access Limitations
+    - Unrepairable
+    - AI Scraping
+
+
+
+Alexa:
+  name        : "Alexa"
+  alt-names   :
+    - Echo
+    - Echo Dot 
+    - Echo Show
+  description : "Amazon-branded smart speaker and virtual assistant"
+  company     : "Amazon"
+  grade       : 1 # Does not meet our goals. 
+              # 2 # Do what you got to do. 
+              # 3 # What're you gonna do?/No ethical consumption under capitalism. 
+              # 4 # Good Shit
+              # 5 # Holy Shit
+  enshittification-stage: 3 # abuse business partners
+  diy-level   : 1 # plug and play. 
+  risk-level  : 4 # SHITCON 1
+  pros: 
+    - Free
+    - One-Time Purchase
+  cons:
+    - Proprietary Software/Hardware
+    - Excess Data Collection
+    - Consumer Rights Violations
+    - Unrepairable
+
+Voice-Assistant-PE:
+  name        : "Voice Assistant Preview Edition"
+  alt-names   :
+    - VA
+    - Home Assistant Voice
+  description : "Open-Source Smart Speaker from Home Assistant "
+  company     : "Amazon"
+  grade       : 4 # Good Shit
+  enshittification-stage: 1 # abuse business partners
+  diy-level   : 1 # plug and play. 
+  risk-level  : 2 # Polished Turd
+  pros: 
+    - Free
+    - One-Time Purchase
+  cons:
+    - Proprietary Software/Hardware
+    - Excess Data Collection
+    - Consumer Rights Violations
+    - Unrepairable
+
