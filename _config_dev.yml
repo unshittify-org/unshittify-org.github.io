@@ -24,3 +24,7 @@ sass:
 
 # Disable when not in production
 google_analytics_tracking_id: false
+
+
+# render draft posts with dates
+show_drafts: true
