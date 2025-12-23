@@ -27,8 +27,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 2em 0 0.5em;
-  // margin: 1em 0 0.5em; //Potential change for if spacing before headers is too big
+//   margin: 2em 0 0.5em;
+  margin: 1em 0 0.5em; //Potential change for if spacing before headers is too big
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
