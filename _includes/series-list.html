@@ -1,7 +1,7 @@
 <!-- Series links -->
 <div class="notice" markdown="1">
     <h3>More from the {{ page.series_title | upcase }} series</h3>
-    {% assign posts = site.posts | where: "is_series", true | where: "series_title", page.series_title | sort: 'date' %}
+    {% assign posts = site.posts | where: "is_series", true | where: "series_title", page.series_title | sort: 'series_number' %}
     <ol>
     {% for post in posts %}
         {% if post.title == page.title %}
