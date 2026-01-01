@@ -96,6 +96,8 @@
 
 .notice--warning {
   @include notice($warning-color);
+  border: $warning-border;
+  border-image: $warning-border-image
 }
 
 /* Success notice */
@@ -108,4 +110,6 @@
 
 .notice--danger {
   @include notice($danger-color);
+  border: $warning-border;
+  border-image: $warning-border-image
 }

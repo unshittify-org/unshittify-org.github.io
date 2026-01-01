@@ -39,9 +39,18 @@ $light-gray: #BDC1C4; // Same as default. default notice
 $default-notice-color: $medium-main; //mix($light-gray,$medium-accent,50%) ;//mix($dark-accent,$medium-accent,50%); //lighten($medium-accent,15%);
 $primary-color: $dark-accent; //For Buttons notice--primary
 $info-color: $medium-accent;//notice--info 
-$warning-color: #333; // . notice--warning
+$warning-color: #ffdb2a; // . notice--warning
 $success-color: #3fa63f; //Same as default success-color. notice--success
-$danger-color: #ff353a; //notice--danger
+// $danger-color: #ff353a; //notice--danger
+
+$warning-border: 10px solid pink;
+$warning-border-image: repeating-linear-gradient(
+    -45deg,
+    mix($background-color, black, $notice-background-mix),
+    mix($background-color, black, $notice-background-mix) 20px,
+    mix($background-color, #ffb101, $notice-background-mix) 20px,
+    mix($background-color, #ffb101, $notice-background-mix) 40px
+  ) 10;
 
 ///////////////////////////////////////////////////////////////////////////////
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
