@@ -5,14 +5,46 @@
 #
 # Start development with › $ jekyll serve --config _config.yml,_config_dev.yml
 
-url: 		'http://localhost:4000'
+url: 		 'http://localhost:4000'
 baseurl: 	''
 urlimg: 	'http://localhost:4000/images/'
 
+logo:     "/assets/logos/LogoDraftBranch.png"
+
+### Additional Local Collections
+collections:
+  docs: #[[Local Config]]
+    output: true
+    permalink: /:collection/:path/
+  examples: #[[Local Config]]
+    output: true
+    permalink: /:collection/:path/
+
+
+### Local Config Post Front Matter defaults https://mmistakes.github.io/minimal-mistakes/docs/configuration/#front-matter-defaults
+
+defaults:
+  # _docs
+  - scope:  #[[Local Config]]
+      path: "_docs"
+      type: docs
+    values:
+      layout: single
+  # _examples
+  - scope:  #[[Local Config]]
+      path: "_examples"
+      type: examples
+    values:
+      layout: single
+
+
+### Stuff from original config_dev file
 # See › https://github.com/jekyll/jekyll-gist#disabling-noscript-support
 gist:
   noscript: false
 
+
+### Unique to local config
 sass:
   # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
   style: :expanded

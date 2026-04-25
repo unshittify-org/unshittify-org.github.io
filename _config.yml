@@ -30,12 +30,11 @@ minimal_mistakes_skin    : sunrise # default, air, aqua, contrast, dark, neon, m
 
 
 ### Background variables
-url                      : 'http://localhost:4000' # the base hostname & protocol for your site e.g. "https://mmistakes.github.io" [[Local Config]]
+url                      : "https://unshittify-org.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-urlimg                   : 'http://localhost:4000/images/' #[[Local Config]]
 repository               : "unshittify-org/unshittify-org.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/logos/LogoDraftBranch.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" [[Local Config]]
+logo                     : "/assets/logos/Unshittify__Page_2_logo_transparent.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
@@ -144,12 +143,6 @@ collections:
   outhouse: # All the bad stuff we're trying to replace
     output: true
     permalink: /:collection/:path/
-  docs: #[[Local Config]]
-    output: true
-    permalink: /:collection/:path/
-  examples: #[[Local Config]]
-    output: true
-    permalink: /:collection/:path/
 
 
 ### Post Front Matter defaults https://mmistakes.github.io/minimal-mistakes/docs/configuration/#front-matter-defaults
@@ -192,18 +185,6 @@ defaults:
       # comments: true
       # share: true
       # related: true
-  # _docs
-  - scope:  #[[Local Config]]
-      path: "_docs"
-      type: docs
-    values:
-      layout: single
-  # _examples
-  - scope:  #[[Local Config]]
-      path: "_examples"
-      type: examples
-    values:
-      layout: single
   ## _other_folder
   # - scope:
   #     path: "_foo"
@@ -303,18 +284,5 @@ social:
 analytics:
   provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : false # [[Local config]]
+    tracking_id          :
     anonymize_ip         : # true, false (default)
-
-
-### Unique to local config
-show_drafts: true
-
-sass:
-  # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-  style: :expanded
-  line_numbers: true
-  # trace_selectors: true
-  # debug_info: true
-  # FUTURE https://github.com/jekyll/jekyll-sass-converter/issues/12
-  # sourcemap: true # Produces an error
