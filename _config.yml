@@ -137,17 +137,32 @@ footer:
 collections:
   # Posts has defaults.  Posts is the blog.
   # Pages has defaults
+  ############################################
+  # MUST BE SAME SETTINGS AS _CONFIG_DEV.YML #
+  #          UPDATE IN BOTH PLACES           #
+  # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv #
+  ############################################
   about:
     output: true
     permalink: /:collection/:path/
   outhouse: # All the bad stuff we're trying to replace
     output: true
     permalink: /:collection/:path/
+  ############################################
+  # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ #
+  # MUST BE SAME SETTINGS AS _CONFIG_DEV.YML #
+  #           UPDATE IN BOTH PLACES          #
+  ############################################
 
 
 ### Post Front Matter defaults https://mmistakes.github.io/minimal-mistakes/docs/configuration/#front-matter-defaults
 words_per_minute         : 200
 defaults:
+  ############################################
+  # MUST BE SAME SETTINGS AS _CONFIG_DEV.YML #
+  #          UPDATE IN BOTH PLACES           #
+  # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv #
+  ############################################
   # _posts
   - scope:
       path: ""
@@ -192,7 +207,11 @@ defaults:
   #   values:
   #     layout: bar
   #     other_settings: buzz
-
+  ############################################
+  # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ #
+  # MUST BE SAME SETTINGS AS _CONFIG_DEV.YML #
+  #           UPDATE IN BOTH PLACES          #
+  ############################################
       
 
 
