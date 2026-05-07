@@ -30,7 +30,7 @@ minimal_mistakes_skin    : sunrise # default, air, aqua, contrast, dark, neon, m
 
 
 ### Background variables
-url                      : "https://unshittify-org..github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://unshittify-org.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "unshittify-org/unshittify-org.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -137,17 +137,32 @@ footer:
 collections:
   # Posts has defaults.  Posts is the blog.
   # Pages has defaults
+  ############################################
+  # MUST BE SAME SETTINGS AS _CONFIG_DEV.YML #
+  #          UPDATE IN BOTH PLACES           #
+  # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv #
+  ############################################
   about:
     output: true
     permalink: /:collection/:path/
   outhouse: # All the bad stuff we're trying to replace
     output: true
     permalink: /:collection/:path/
+  ############################################
+  # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ #
+  # MUST BE SAME SETTINGS AS _CONFIG_DEV.YML #
+  #           UPDATE IN BOTH PLACES          #
+  ############################################
 
 
 ### Post Front Matter defaults https://mmistakes.github.io/minimal-mistakes/docs/configuration/#front-matter-defaults
 words_per_minute         : 200
 defaults:
+  ############################################
+  # MUST BE SAME SETTINGS AS _CONFIG_DEV.YML #
+  #          UPDATE IN BOTH PLACES           #
+  # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv #
+  ############################################
   # _posts
   - scope:
       path: ""
@@ -192,7 +207,11 @@ defaults:
   #   values:
   #     layout: bar
   #     other_settings: buzz
-
+  ############################################
+  # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ #
+  # MUST BE SAME SETTINGS AS _CONFIG_DEV.YML #
+  #           UPDATE IN BOTH PLACES          #
+  ############################################
       
 
 

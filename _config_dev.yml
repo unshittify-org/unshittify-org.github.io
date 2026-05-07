@@ -5,14 +5,111 @@
 #
 # Start development with › $ jekyll serve --config _config.yml,_config_dev.yml
 
-url: 		'http://localhost:4000'
+url: 		 'http://localhost:4000'
 baseurl: 	''
 urlimg: 	'http://localhost:4000/images/'
 
+logo:     "/assets/logos/LogoDraftBranch.png"
+
+### Additional Local Collections
+collections:
+  ########################################
+  # MUST BE SAME SETTINGS AS _CONFIG.YML #
+  #        UPDATE IN BOTH PLACES         #
+  # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv #
+  ########################################
+  about:
+    output: true
+    permalink: /:collection/:path/
+  outhouse: # All the bad stuff we're trying to replace
+    output: true
+    permalink: /:collection/:path/
+  ########################################
+  # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ #
+  # MUST BE SAME SETTINGS AS _CONFIG.YML #
+  #        UPDATE IN BOTH PLACES         #
+  ########################################
+  #########################
+  # UNIQUE TO _CONFIG_DEV #
+  # vvvvvvvvvvvvvvvvvvvvv #
+  #########################
+  docs: #[[Local Config]]
+    output: true
+    permalink: /:collection/:path/
+  examples: #[[Local Config]]
+    output: true
+    permalink: /:collection/:path/
+
+
+### Local Config Post Front Matter defaults https://mmistakes.github.io/minimal-mistakes/docs/configuration/#front-matter-defaults
+
+defaults:
+  ########################################
+  # MUST BE SAME SETTINGS AS _CONFIG.YML #
+  #        UPDATE IN BOTH PLACES         #
+  # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv #
+  ########################################
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+       # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _about
+  - scope:
+      path: "_about"
+      type: about
+    values:
+      layout: single
+      author_profile: false
+  # _outhouse
+  - scope:
+      path: ""
+      type: outhouse
+    values:
+      layout: single
+  ########################################
+  # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ #
+  # MUST BE SAME SETTINGS AS _CONFIG.YML #
+  #        UPDATE IN BOTH PLACES         #
+  ########################################
+  #########################
+  # UNIQUE TO _CONFIG_DEV #
+  # vvvvvvvvvvvvvvvvvvvvv #
+  #########################
+  # _docs
+  - scope:  #[[Local Config]]
+      path: "_docs"
+      type: docs
+    values:
+      layout: single
+  # _examples
+  - scope:  #[[Local Config]]
+      path: "_examples"
+      type: examples
+    values:
+      layout: single
+
+
+### Stuff from original config_dev file
 # See › https://github.com/jekyll/jekyll-gist#disabling-noscript-support
 gist:
   noscript: false
 
+
+### Unique to local config
 sass:
   # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
   style: :expanded
