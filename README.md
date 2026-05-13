@@ -111,6 +111,7 @@ So you want to use a pull request.
 If one of the old commits from the private repo has something you do NOT want showing up in the public repo, you should squash the commit before pushing to remote.
 
 TBD how to do this.
+
 ---
 
 </details>
