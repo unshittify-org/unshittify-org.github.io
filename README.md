@@ -114,6 +114,7 @@ TBD how to do this.
 
 </details>
 
+---
 
 ### Local Config
 
@@ -130,5 +131,5 @@ Therefore, some sections, like the frontmatter defaults and the collection setti
 ## TODO:
 - [ ] Remove sample posts from home page
 - [ ] Add home page "newest posts" section
-- [ ] Add [Definition Tooltips](Definition Tooltips https://erikw.me/blog/tech/open-sourcing-my-second-jekyll-plugin-glossary-tooltip) to blog 
+- [ ] Add [Definition Tooltips](https://erikw.me/blog/tech/open-sourcing-my-second-jekyll-plugin-glossary-tooltip) to blog 
 - [ ] More TBD
