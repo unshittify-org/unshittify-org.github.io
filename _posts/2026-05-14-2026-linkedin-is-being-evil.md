@@ -110,7 +110,7 @@ Linkedin looks for these fingerprints in the final HTML, to try to identify exte
 
 ### Using This Data
 
-With these three scraping mechanisms, LinkedIn makes a list of which extensions you have (from their list of >6,000).  It sends those results back to LinkedIn Servers.
+With these three scraping mechanisms, LinkedIn makes a list of which extensions you have (from their list of \>6,000).  It sends those results back to LinkedIn Servers.
 
 From there, **we dont know what they do**.
 
@@ -222,4 +222,4 @@ I look forward to seeing the California class action lawsuit play out, and to se
 ---
 [^excessive]: This comes with a caveat: If a website expects to see an extension, then yes it needs to ask it to interact.  But LinkedIn is trying to interact with extensions that have absolutely nothing to do with its services.  That's an overreach.
 
-[^firefox-ai]: Firefox has started building in AI tools that we and many others find annoying, unneccessary, and a concerning sign for the future.  We're monitoring the situation, but for now, they have, functionally, AI Feature Kill Switch easily available [in the settings](https://askubuntu.com/questions/1556081/how-to-disable-all-the-ai-features-in-firefox-to-increase-performance).  I have not seen any AI features from Firefox since blocking the AI "Enhancements"
+[^firefox-ai]: Firefox has started building in AI tools that we and many others find annoying, unneccessary, and a concerning sign for the future.  We're monitoring the situation, but for now, they have, functionally, an AI Feature Kill Switch easily available [in the settings](https://askubuntu.com/questions/1556081/how-to-disable-all-the-ai-features-in-firefox-to-increase-performance).  I have not seen any AI features from Firefox since blocking the AI "Enhancements"
