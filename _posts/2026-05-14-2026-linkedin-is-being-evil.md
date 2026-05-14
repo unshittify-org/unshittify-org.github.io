@@ -106,7 +106,7 @@ After that, your extensions might make changes to that HTML. If you remember the
 
 Some extensions make changes that are more identifiable, by including the extension's name or other fingerprints in the HTML after they're done.
 
-Linkedin looks for these fingerprints in the final HTML, to try to identify extensions that may have affected the HTML it sent you.
+LinkedIn looks for these fingerprints in the final HTML, to try to identify extensions that may have affected the HTML it sent you.
 
 ### Using This Data
 
