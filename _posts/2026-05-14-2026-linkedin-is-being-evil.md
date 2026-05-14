@@ -8,7 +8,7 @@ tags:
   - LinkedIn
   - Social Media
   - Job Search
-date: 2026-04-23
+date: 2026-05-14
 ---
 
 Here's the headline: LinkedIn is being accused of mass privacy violations that we at Unshittify are diametrically opposed to.
