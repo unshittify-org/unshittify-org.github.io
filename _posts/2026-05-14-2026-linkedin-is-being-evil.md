@@ -38,7 +38,7 @@ According to the BrowserGate report, LinkedIn is:
 
 If you don't like this, your recourse is minimal.  Here's what you _can_ do.
 
-* Protect yourself by using a non-Chromium browser.  Firefox, and Librewolf are two great, privacy-focused, open-source browsers that don't run on Chromium.
+* Protect yourself by using a non-Chromium browser.  Firefox and Librewolf are two great, privacy-focused, open-source browsers that don't run on Chromium.
 * If you have control over it at your workplace, post your job postings to job boards _other than_ LinkedIn, to protect other people.
 * Call or email your [state and federal representatives](https://www.commoncause.org/find-your-representative/), and push them to introduce and support privacy laws and anti-monopoly laws.
 
@@ -53,7 +53,7 @@ If you don't like this, your recourse is minimal.  Here's what you _can_ do.
 
 In short, LinkedIn is collecting data on what browser extensions their users have installed on any Chrome-based browser. [LinkedIn's own affadavit](https://browsergate.eu/downloads/Lakam-affidavit-redacted.pdf) has verified that they have extension detection mechanisms, and that they're concerned about Chrome extensions.
 
-They've been doing this since at least 2017, when [they were scanning for 38 browser extensions](https://github.com/dandrews/nefarious-linkedin/blob/master/README.md). In 2024, they were [checking for over 450](https://www.josefkadlec.com/blog/the-complete-list-of-blacklisted-linkedin-plugins-vol-3)
+They've been doing this since at least 2017, when [they were scanning for 38 browser extensions](https://github.com/dandrews/nefarious-linkedin/blob/master/README.md). In 2024, they were [checking for over 450](https://www.josefkadlec.com/blog/the-complete-list-of-blacklisted-linkedin-plugins-vol-3).
 
 Now, they try to identify whether you are using any of [over 6,000 plugins](https://browsergate.eu/extensions/).  And they check this without asking or warning you.
 
@@ -106,7 +106,7 @@ After that, your extensions might make changes to that HTML. If you remember the
 
 Some extensions make changes that are more identifiable, by including the extension's name or other fingerprints in the HTML after they're done.
 
-Linkedin, looks for these fingerprints in the final HTML, to try to identify extensions that may have affected the HTML it sent you.
+Linkedin looks for these fingerprints in the final HTML, to try to identify extensions that may have affected the HTML it sent you.
 
 ### Using This Data
 
@@ -128,7 +128,7 @@ This looks VERY bad.
 We believe that a company collecting data on their users without consent is a grevious privacy violation.
 
 The EU and other jurisdictions have laws like the GDPR - that law is why we have cookie consent banners everywhere.  It's why we get the option to select our cookie preferences!
-{% include figure class="half" popup=false image_path="assets\images\cookie_consent.png" alt="An example of a cookie preferences page, with 'Strictly necessary cookies' forced to be selected, 'Preference cookies' and 'Analytical cookies' selected, and 'Advertising cookies' deselected.  The legal text states: 'We use cookies (and similar technologies) to personalize content, improve the website and analyze traffic.  With these cookies we and our partners collect information about you and tract your internet behavior within, and possibly also outside our website.  In this way we build your personal profile. With this we adapt our website and communication to your preferences. We can also show targeted advertisements based on your recent internet behavior. You can read more about it in our privacy policy. Updating your cookie preferences will reload the page. Strictly necessary cookies; Preference cookies; Analytical cookies; Advertising cookies; Your cookie preferences will be stored for one year. If you want to change your cookie preferences in the meantime, you can use the link in the footer of the website. Your updated cookie preferences will again be stored for one year.'" caption="It is fantastic that we get to choose what data we share." %} 
+{% include figure class="half" popup=false image_path="assets\images\cookie_consent.png" alt="An example of a cookie preferences page, with 'Strictly necessary cookies' forced to be selected, 'Preference cookies' and 'Analytical cookies' selected, and 'Advertising cookies' deselected.  The legal text states: 'We use cookies (and similar technologies) to personalize content, improve the website and analyze traffic.  With these cookies we and our partners collect information about you and track your internet behavior within, and possibly also outside our website.  In this way we build your personal profile. With this we adapt our website and communication to your preferences. We can also show targeted advertisements based on your recent internet behavior. You can read more about it in our privacy policy. Updating your cookie preferences will reload the page. Strictly necessary cookies; Preference cookies; Analytical cookies; Advertising cookies; Your cookie preferences will be stored for one year. If you want to change your cookie preferences in the meantime, you can use the link in the footer of the website. Your updated cookie preferences will again be stored for one year.'" caption="It is fantastic that we get to choose what data we share." %} 
 
 
 Now, we at Unshittify are US-based, and unfortunately we don't live in California, so we don't get the protective benefits of the GDPR or other privacy laws.  But we'd say that meeting the GDPR's privacy protection and data collection consent requirements is a decent baseline bare minimum that a company should be meeting.
@@ -137,7 +137,7 @@ Now, we at Unshittify are US-based, and unfortunately we don't live in Californi
 
 It is unacceptable that LinkedIn did not give us the opportunity to refuse consent for this data collection, especially given that they are collecting this data in ways that disregard built-in consent checks.
 
-LinkedIn appears to be far overstepping the bounds of the data collection necessary to enforce their terms of service, and has barreled straight into cartoonishly \[adjective\] mass surveillance and corporate espionage.
+LinkedIn appears to be far overstepping the bounds of the data collection necessary to enforce their terms of service, and has barreled straight into cartoonishly villainous mass surveillance and corporate espionage.
 
 Both the breadth and specificity of the extensions they are searching for is obscene:
 
