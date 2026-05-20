@@ -102,7 +102,7 @@ That's _all_ that LinkedIn needs to do.  Once the HTML is out of LinkedIn's hand
 
 After that, your extensions might make changes to that HTML. If you remember the "Cloud-to-Butt" extension from the mid-twenty-teens, it looked through the HTML, removed any text with the word "cloud", and replaced it with the word "butt".
 
-{% include figure class="half" popup=false image_path="assets/images/ubuntu-cloud-to-butt-cc-by-nc-sa.jpg" alt="Raring to go. From the desktop to my butt, Ubuntu 13.04 is ready to deploy. Get Ubuntu now." caption="I'm not sure I want *anything* deployed there" caption='<a href="https://www.flickr.com/photos/rangerrick/8712630706" title="Ubuntu 13.04, ready to deploy to my butt.">Ubuntu 13.04, ready to deploy to my butt.</a>" by "<a href="https://www.flickr.com/photos/rangerrick/">Benjamin Reed</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" rel="license noopener noreferrer">CC BY-NC-SA 2.0</a>' %}
+{% include figure class="half" popup=false image_path="assets/images/ubuntu-cloud-to-butt-cc-by-nc-sa.jpg" alt="Raring to go. From the desktop to my butt, Ubuntu 13.04 is ready to deploy. Get Ubuntu now." caption="I'm not sure I want *anything* deployed there" citation='"<a href="https://www.flickr.com/photos/rangerrick/8712630706" title="Ubuntu 13.04, ready to deploy to my butt.">Ubuntu 13.04, ready to deploy to my butt.</a>" by "<a href="https://www.flickr.com/photos/rangerrick/">Benjamin Reed</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" rel="license noopener noreferrer">CC BY-NC-SA 2.0</a>' %}
 
 Some extensions make changes that are more identifiable, by including the extension's name or other fingerprints in the HTML after they're done.
 
