@@ -257,7 +257,7 @@ figure {
 
     > a,
     > img, 
-    figcaption.figure-citation {
+    .figure-citation {
       @include breakpoint($small) {
         width: calc(50% - 0.5em);
       }
@@ -274,7 +274,7 @@ figure {
 
     > a,
     > img,
-    figcaption.figure-citation {
+    .figure-citation {
       @include breakpoint($small) {
         width: calc(33.3333% - 0.5em);
       }
@@ -302,7 +302,7 @@ figcaption {
     }
   }
 
-  &.figure-citation {
+  >.figure-citation {
     font-size: $type-size-8
   }
 }
