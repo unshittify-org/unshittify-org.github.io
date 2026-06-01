@@ -118,16 +118,13 @@ In some situations, you may need to turn off the firmware password or otherwise 
 
 ### Other Uses
 
-The BIOS menu allows you to access a variety of useful information and settings for your computer.
-
-
-
-The BIOS menu lets you manage your computer at a very high level, e.g.:
+There are other purposes for accessing the BIOS menu, but we'll discuss them more in depth elsewhere if necessary. In short, the BIOS menu lets you manage your computer at a very high level, e.g.:
 
 * Enable or disabling components (e.g., your mouse, keyboard, audio chip, network inferface)
-* Set the boot order
 * Monitor your hardware
 * Boot into safe mode (on some computers)
+
+Again: You shouldn't mess with stuff in your BIOS unless you understand what you're doing.  But it's *incredibly* helpful to know how to get access to it when you need to.
 
 ---
 
