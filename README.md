@@ -148,7 +148,9 @@ New-Alias localjekyll serveJekyllLocally
 Again, replace `$$$LOCAL_IP$$$}` with your local IP address.
 
 ## TODO:
-- [ ] Remove sample posts from home page
+
+- [x] Remove sample posts from home page
 - [ ] Add home page "newest posts" section
-- [ ] Add [Definition Tooltips](https://erikw.me/blog/tech/open-sourcing-my-second-jekyll-plugin-glossary-tooltip) to blog 
+- [ ] Add [Definition Tooltips](https://erikw.me/blog/tech/open-sourcing-my-second-jekyll-plugin-glossary-tooltip) to blog
+- [ ] Add bounding box CSS for accordions
 - [ ] More TBD
