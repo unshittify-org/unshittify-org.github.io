@@ -35,6 +35,7 @@ toc: true
 toc_label: "Helpers"
 toc_icon: "cogs"
 ---
+
 You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages doesn't allow most plugins --- [custom tags](https://jekyllrb.com/docs/plugins/#tags) are out. Instead the theme leverages [**includes**](https://jekyllrb.com/docs/templates/#includes) to do something similar.
 
 ## Group by array
@@ -42,6 +43,7 @@ You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages do
 [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array) by Max White.
 
 A liquid include file for Jekyll that allows an object to be grouped by an array.
+
 
 ## Figure
 
@@ -85,13 +87,12 @@ Generate a `<figure>` element with optional caption of arrays with two or more i
 
 To place a gallery add the necessary YAML Front Matter.
 
-
-| Name           | Required     | Description                                                                                                          |
-| ---------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **url**        | Optional     | URL to link gallery image to (eg. a larger detail image).                                                            |
-| **image_path** | **Required** | Full path to image eg:`/assets/images/filename.jpg`. Use absolute URLS for those hosted externally.                  |
-| **alt**        | Optional     | Alternate text for image.                                                                                            |
-| **title**      | Optional     | Title text for image. Will display as a caption in a Magnific Popup overlay when linked to a larger image with`url`. |
+| Name           | Required     | Description                                                                                                           |
+| -------------- | ------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **url**        | Optional     | URL to link gallery image to (eg. a larger detail image).                                                             |
+| **image_path** | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally.                  |
+| **alt**        | Optional     | Alternate text for image.                                                                                             |
+| **title**      | Optional     | Title text for image. Will display as a caption in a Magnific Popup overlay when linked to a larger image with `url`. |
 
 ```yaml
 gallery:
@@ -111,13 +112,12 @@ gallery:
 
 And then drop-in the gallery include in the body where you'd like it to appear.
 
-
-| Include Parameter | Required | Description                                                                                                                                                      | Default                                                                     |
-| ------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| **id**            | Optional | To add multiple galleries to a document uniquely name them in the YAML Front Matter and reference in`{% raw %}{% include gallery id="gallery_id" %}{% endraw %}` | `gallery`                                                                   |
-| **layout**        | Optional | Layout type. 2 column:`half`, 3 column: `third`, single column: `''` (blank)                                                                                     | Determined by gallery size. Two items:`half`, three or more items: `third`. |
-| **class**         | Optional | Use to add a`class` attribute to the surrounding `<figure>` element for additional styling needs.                                                                |                                                                             |
-| **caption**       | Optional | Gallery caption description. Markdown is allowed.                                                                                                                |                                                                             |
+| Include Parameter | Required | Description                                                                                                                                                       | Default                                                                      |
+| ----------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **id**            | Optional | To add multiple galleries to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include gallery id="gallery_id" %}{% endraw %}` | `gallery`                                                                    |
+| **layout**        | Optional | Layout type. 2 column: `half`, 3 column: `third`, single column: `''` (blank)                                                                                     | Determined by gallery size. Two items: `half`, three or more items: `third`. |
+| **class**         | Optional | Use to add a `class` attribute to the surrounding `<figure>` element for additional styling needs.                                                                |                                                                              |
+| **caption**       | Optional | Gallery caption description. Markdown is allowed.                                                                                                                 |                                                                              |
 
 ```liquid
 {% raw %}{% include gallery caption="This is a sample gallery with **Markdown support**." %}{% endraw %}
@@ -127,23 +127,24 @@ And then drop-in the gallery include in the body where you'd like it to appear.
 
 {% include gallery caption="This is a sample gallery with **Markdown support**." %}
 
+
+
 ## Feature row
 
 Designed to compliment the [`splash`]({{ "/docs/layouts/#splash-page-layout" | relative_url }}) page layout as a way of arranging and aligning "feature blocks" containing text or image.
 
 To add a feature row containing three content blocks with text and image, add the following YAML Front Matter
 
-
-| Name              | Required     | Description                                                                                         | Default                            |
-| ------------------- | -------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| **image_path**    | **Required** | Full path to image eg:`/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |                                    |
-| **image_caption** | Optional     | Caption for image, Markdown is supported eg:`"Image from [Unsplash](https://unsplash.com)"`         |                                    |
-| **alt**           | Optional     | Alternate text for image.                                                                           |                                    |
-| **title**         | Optional     | Content block title.                                                                                |                                    |
-| **excerpt**       | Optional     | Content block excerpt text. Markdown is allowed.                                                    |                                    |
-| **url**           | Optional     | URL that the button should link to.                                                                 |                                    |
-| **btn_label**     | Optional     | Button text label.                                                                                  | `more_label` in UI Text data file. |
-| **btn_class**     | Optional     | Button style. See [utility classes]({{ "/docs/utility-classes/#buttons"                             | relative_url }}) for options.      |
+| Name              | Required     | Description                                                                                          | Default                            |
+| ----------------- | ------------ | ---------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| **image_path**    | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |                                    |
+| **image_caption** | Optional     | Caption for image, Markdown is supported eg: `"Image from [Unsplash](https://unsplash.com)"`         |
+| **alt**           | Optional     | Alternate text for image.                                                                            |                                    |
+| **title**         | Optional     | Content block title.                                                                                 |                                    |
+| **excerpt**       | Optional     | Content block excerpt text. Markdown is allowed.                                                     |                                    |
+| **url**           | Optional     | URL that the button should link to.                                                                  |                                    |
+| **btn_label**     | Optional     | Button text label.                                                                                   | `more_label` in UI Text data file. |
+| **btn_class**     | Optional     | Button style. See [utility classes]({{ "/docs/utility-classes/#buttons"                              | relative_url }}) for options.      | `btn` |
 
 ```yaml
 feature_row:
@@ -165,11 +166,10 @@ feature_row:
 
 And then drop-in the feature row include in the body where you'd like it to appear.
 
-
-| Include Parameter | Required | Description                                                                                                                                               | Default       |
-| ------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| **id**            | Optional | To add multiple rows to a document uniquely name them in the YAML Front Matter and reference in`{% raw %}{% include feature_row id="row2" %}{% endraw %}` | `feature_row` |
-| **type**          | Optional | Alignment of the featured blocks in the row. Options include:`left`, `center`, or `right` aligned.                                                        |               |
+| Include Parameter | Required | Description                                                                                                                                                | Default       |
+| ----------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| **id**            | Optional | To add multiple rows to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include feature_row id="row2" %}{% endraw %}` | `feature_row` |
+| **type**          | Optional | Alignment of the featured blocks in the row. Options include: `left`, `center`, or `right` aligned.                                                        |               |
 
 ```liquid
 {% raw %}{% include feature_row %}{% endraw %}
@@ -184,12 +184,11 @@ And then drop-in the feature row include in the body where you'd like it to appe
 
 Embed a video from YouTube, Vimeo, Google Drive, or bilibili that responsively sizes to fit the width of its parent. To help with GDPR compliance, the theme is using the privacy enhanced version of YouTube and Vimeo providers out of the box.
 
-
-| Parameter  | Required     | Description                                                                     |
-| ------------ | -------------- | --------------------------------------------------------------------------------- |
-| `id`       | **Required** | ID of the video                                                                 |
-| `provider` | **Required** | Hosting provider of the video:`youtube`, `vimeo`, `google-drive`, or `bilibili` |
-| `danmaku`  | Optional     | Bilibili only,[details below](#Bilibili)                                        |
+| Parameter  | Required     | Description                                                |
+| ---------- | ------------ | ---------------------------------------------------------- |
+| `id`       | **Required** | ID of the video                                            |
+| `provider` | **Required** | Hosting provider of the video: `youtube`, `vimeo`, `google-drive`, or `bilibili` |
+| `danmaku`  | Optional     | Bilibili only, [details below](#Bilibili)                  |
 
 ### YouTube
 
@@ -285,13 +284,12 @@ Auto-generated table of contents list for your posts and pages can be enabled us
 
 Add `toc: true` to the YAML Front Matter of any post or page.
 
-
-| Parameter      | Required | Description                                                 | Default                                                                                                                                                 |
-| ---------------- | ---------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **toc**        | Optional | Show table of contents. (boolean)                           | `false`                                                                                                                                                 |
-| **toc_label**  | Optional | Table of contents title. (string)                           | `toc_label` in UI Text data file.                                                                                                                       |
+| Parameter      | Required | Description                                                 | Default                                                                                                                                                       |
+| -------------- | -------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **toc**        | Optional | Show table of contents. (boolean)                           | `false`                                                                                                                                                       |
+| **toc_label**  | Optional | Table of contents title. (string)                           | `toc_label` in UI Text data file.                                                                                                                             |
 | **toc_icon**   | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/v6/search?s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
-| **toc_sticky** | Optional | Stick table of contents to top of screen.                   | `false`                                                                                                                                                 |
+| **toc_sticky** | Optional | Stick table of contents to top of screen.                   | `false`                                                                                                                                                       |
 
 **TOC example with custom title and icon**
 
@@ -325,7 +323,6 @@ Bad headings:
 ### Heading (skipped H2)
 ##### Heading (skipped H4)
 ```
-
 {% endcapture %}
 
 <div class="notice--warning">
@@ -346,10 +343,9 @@ To include a Kramdown [auto-generated table of contents](https://kramdown.gettal
 **Deprecated:** `toc` helper will be removed in the next major version of the theme. It is encouraged that you migrate to the YAML Front Matter method above.
 {: .notice--danger}
 
-
-| Parameter | Required | Description                                                 | Default                                                                                                                                                 |
-| ----------- | ---------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **title** | Optional | Table of contents title. (string)                           | `toc_label` in UI Text data file.                                                                                                                       |
+| Parameter | Required | Description                                                 | Default                                                                                                                                                       |
+| --------- | -------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **title** | Optional | Table of contents title. (string)                           | `toc_label` in UI Text data file.                                                                                                                             |
 | **icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/v6/search?s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
 
 **TOC example with custom title and icon**
@@ -426,7 +422,6 @@ To add a navigation list to a post or page's main content instead of the sidebar
 
 {% include nav_list nav="foo" %}
 
-
-| Parameter | Required     | Description                                             |
-| ----------- | -------------- | --------------------------------------------------------- |
-| items     | **Required** | Name of the links array found in`_data/navigation.yml`. |
+| Parameter | Required     | Description                                              |
+| --------- | ------------ | -------------------------------------------------------- |
+| items     | **Required** | Name of the links array found in `_data/navigation.yml`. |
