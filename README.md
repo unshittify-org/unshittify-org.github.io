@@ -120,15 +120,32 @@ TBD how to do this.
 
 ### Local Config
 
-To host the site locally while you work, run `bundle exec jekyll serve --config _config.yml,_config_dev.yml -H $LOCAL_IP$`
+To host the site locally while you work, run `bundle exec jekyll serve --config _config.yml,_config_dev.yml -H {LOCAL_IP}`
 
-Note: there must **not** be a space after the comma.  Without the space, Jekyll will use the configurations in `_config.yml`, but override any that are duplicated in `_config_dev.yml` with the values it finds there.
+Some important notes:
 
-**With** the space, Jekyll will ignore the `_config_dev.yml` file. 
+1. `{LOCAL_IP}` should be replaced with your local IP address - e.g. 10.0.0.145
+2. There must **not** be a space after the comma.  Without the space, Jekyll will use the configurations in `_config.yml`, but override any that are duplicated in `_config_dev.yml` with the values it finds there.<br>
+  **With** the space, Jekyll will completely ignore the `_config_dev.yml` file, like you didn't even bother including it.
+3. The config files are YAML files. When both files have the same top level variables, Jekyll will override the value defined in the first config file with the value in the second config file. This means that for variables that are actually lists, there is no way to tell it to _add_ the elements that are in `_config_dev.yml` to the elements in `_config.yml`.<br>
+    Therefore, some sections, like the frontmatter defaults and the collection settings, unfortunately must fully included in both `_config.yml` and `_config_dev.yml`.  Ensure that you update these sections in both files when you change them.  They have marked in the config files.
 
-Also note, the config files are YAML files.  It overrides at the top level variables that it finds.  There is no way to tell it to _add_ the elements that are in `_config_dev.yml` to the elements in `_config.yml`.
+#### Aliases
 
-Therefore, some sections, like the frontmatter defaults and the collection settings, unfortunately must fully included in both `_config.yml` and `_config_dev.yml`.  Ensure that you update these sections in both files when you change them.  They have marked in the config files.
+I use the PowerShell Alias `localjekyll` for the above command.
+
+I created it following the instructions from [Ben Carp's Stack Overflow Comment](https://stackoverflow.com/a/50309277). I did not need to turn on developer mode, or reboot my computer to activate the scripts, because the checkbox was already selected. 
+
+I did make sure to refresh my PowerShell session with `. $profile` before attempting to use the alias, though.
+
+If you want the same alias that I do, my `Microsoft.PowerShell_profile.ps1` file looks as follows:
+
+```ps1
+function serveJekyllLocally {bundle exec jekyll serve --config _config.yml,_config_dev.yml -H $$$LOCAL_IP$$$}
+New-Alias localjekyll serveJekyllLocally
+```
+
+Again, replace `$$$LOCAL_IP$$$}` with your local IP address.
 
 ## TODO:
 - [ ] Remove sample posts from home page
