@@ -104,7 +104,17 @@ Read the information on the screen to figure out what your computer wants you to
 
 #### Mac Boot Order Menu
 
-Blah
+For Macs, use their [startup key combos](https://support.apple.com/en-us/102603)[^mac-startup] to access the Startup Options Screen or Startup Manager.  As of time of writing, you need to:
+
+1. Shut down your Mac
+2. Press and hold either the power button or the option key during startup
+3. Select the USB drive icon.
+4. Press the Continue button or the Up Arrow button to select it as a one-time startup drive.
+5. Restart the computer, and it will load from the USB drive.
+
+{% include figure popup=false image_path="/assets/images/macos-startup-options-with-gear-macintosh-hd-copyright-apple.png" alt='A black screen with an icon of a hard drive labeled "Macintosh HD", and an icon of gears labeled "Options".  At the bottom of the screen, there is a "Shut Down" button and a "Restart" button.' caption='The Startup Options window as it appears on computers with Apple Silicon. It may appear different on Intel Macs.' citation='&copy;Apple 2026, accessed on May 31, 2026 via <a href="https://support.apple.com/en-us/102342">https://support.apple.com/en-us/102342</a>' %}
+
+In some situations, you may need to turn off the firmware password or otherwise change the security policy before you can access the Startup Options Screen or Startup Manager.  Instructions about that are also available from the [startup key combos](https://support.apple.com/en-us/102603)[^mac-startup] page.
 
 ### Other Uses
 
@@ -131,3 +141,5 @@ The BIOS menu lets you manage your computer at a very high level, e.g.:
     It is functionally impossible to recover a bricked device.
 
 [^windows-recovery-archive]: This information comes from the Microsoft Support documentation, and was accessed on May 22, 2026, from https://support.microsoft.com/en-us/windows/windows-recovery-environment-0eb14733-6301-41cb-8d26-06a12b42770b.  If the page is not available at time of viewing, it has been archived with [the Wayback Machine](https://web.archive.org/).
+
+[^mac-startup]: If this Apple Support Page is not available at time of reading, an archive should be available at the [Wayback Machine](https://web.archive.org/web/20260524214833/https://support.apple.com/en-us/102603) by the Internet Archive.
