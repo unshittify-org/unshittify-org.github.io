@@ -232,11 +232,11 @@ figure {
   margin: 0 0;
   gap: .5em;
 
-  /* img, */
+  
   iframe,
   .fluid-width-video-wrapper {
     margin-bottom: 1em;
-  }
+  } /* img originally included in this margin def.  Too large IMO, moved. */
 
   img {
     width: 100%;
