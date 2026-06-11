@@ -44,32 +44,39 @@ You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages do
 
 A liquid include file for Jekyll that allows an object to be grouped by an array.
 
+
 ## Figure
 
 Generate a `<figure>` element with a single image and caption.
 
-| Include Parameter | Required     | Description                                                                                          |
-| ----------------- | ------------ | ---------------------------------------------------------------------------------------------------- |
-| **image_path**    | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |
-| **alt**           | Optional     | Alternate text for image.                                                                            |
-| **caption**       | Optional     | Figure caption text. Markdown is allowed.                                                            |
-| **popup**         | Optional     | Enable Magnific Popup on the image.                                                                  |
+
+| Include Parameter | Required     | Description                                                                                         |
+| ------------------- | -------------- | :---------------------------------------------------------------------------------------------------- |
+| **image_path**    | **Required** | Full path to image eg:`/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |
+| **alt**           | Optional     | Alternate text for image.                                                                           |
+| **caption**       | Optional     | Figure caption text. Markdown is allowed.                                                           |
+| **popup**         | Optional     | Enable Magnific Popup on the image.                                                                 |
+| **citation**          | Optional     | Figure citation text. Markdown is encouraged                                                        |
+| **class**             | Optional     | `half` and `third` are accepted, to indicate page-relative width of image.                          |
 
 Using the `figure` include like so:
 
 ```liquid
-{% raw %}{% include figure popup=true image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}{% endraw %}
+{% raw %}{% include figure class="half" popup=true image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." citation="This is a figure citation." %}{% endraw %}
 ```
 
 Will output the following:
 
-{% include figure popup=true image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}
+{% include figure class="half" popup=true image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." citation="This is a figure citation."%}
 
 ```html
 <figure>
-  <a href="/assets/images/unsplash-image-10.jpg" class="image-popup" title="This is a figure caption.">
-    <img src="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image">
-  </a>
+  <figure class="half">
+    <a href="/assets/images/unsplash-image-10.jpg" class="image-popup" title="This is a figure caption.">
+      <img src="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image">
+    </a>
+    <figcaption class="figure-citation">This is a figure citation."</figcaption>
+  </figure>
   <figcaption>This is a figure caption.</figcaption>
 </figure>
 ```
