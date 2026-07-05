@@ -8,7 +8,7 @@ tags:
   - Computer Maintenance
   - Beginners
   - BIOS
-date: 2026-05-19
+date: 2026-07-05
 is_series: true
 series_title: "Computer Maintenance"
 series_number: 10 ## Use BASIC-style numbering, where each post's number increments by 10, to allow for insertion of intermediate posts without renumbering.  https://en.wikipedia.org/wiki/Line_number#Line_numbers_and_style
