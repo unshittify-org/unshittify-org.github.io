@@ -8,13 +8,13 @@ tags:
   - Computer Maintenance
   - Beginners
   - BIOS
-date: 2026-07-05
+date: 2026-07-05 15:31:00 -0700
 is_series: true
 series_title: "Computer Maintenance"
 series_number: 10 ## Use BASIC-style numbering, where each post's number increments by 10, to allow for insertion of intermediate posts without renumbering.  https://en.wikipedia.org/wiki/Line_number#Line_numbers_and_style
 ---
 
-[BIOS](https://en.wikipedia.org/wiki/BIOS) stands for **Basic Input/Output System**.  A modern verion is [UEFI](https://en.wikipedia.org/wiki/UEFI), the "Unified Extensible Firmware Interface". In essence, both BIOS and UEFI are software that manage very basic hardware processes of your computer.
+[BIOS](https://en.wikipedia.org/wiki/BIOS) stands for **Basic Input/Output System**.  A modern version is [UEFI](https://en.wikipedia.org/wiki/UEFI), the "Unified Extensible Firmware Interface". In essence, both BIOS and UEFI are software that manage very basic hardware processes of your computer.
 
 <!--more-->
 
@@ -47,7 +47,7 @@ For some manufacturers, you can press and hold the button.  For some manufacture
 
 The most common keys used to access BIOS are [Delete, F2, and F12, or another key shown during the first startup screen](https://www.tomshardware.com/reviews/bios-keys-to-access-your-firmware,5732.html). Apparently HP uses F10, and Lenovo uses F1.
 
-If you can't get access to the BIOS screen, you can search "[Computer Model] BIOS Startup Keys" - if you can find your computer's manual or a reddit thread, it will tell you how to access BIOS.
+If you can't get access to the BIOS screen, you can search "[Computer Model] BIOS Startup Keys" - if you can find your computer's manual or a Reddit thread, it will tell you how to access BIOS.
 
 ### Special Access on Windows 10 and 11
 
@@ -118,7 +118,7 @@ In some situations, you may need to turn off the firmware password or otherwise 
 
 ### Other Uses
 
-There are other purposes for accessing the BIOS menu, but we'll discuss them more in depth elsewhere if necessary. In short, the BIOS menu lets you manage your computer at a very high level, e.g.:
+There are other purposes for accessing the BIOS menu, but we'll discuss them more in depth elsewhere if necessary. In short, the BIOS menu lets you manage the basic functions of your computer, e.g.:
 
 * Enable or disabling components (e.g., your mouse, keyboard, audio chip, network inferface)
 * Monitor your hardware
@@ -135,11 +135,9 @@ See you in the next one!
 
 ---
 
-[^partition]: A partition is a section of a hard drive or memory system.  Every hard drive has at least one partition - that's what makes it usable.  Adding an extra partition allows you to separate some data and functionality, while keeping it on the same physical disc. <br>
-    Mac keeps their BIOS data on a partition you can't easily access.<br>
-    You might put a second operating system on a partition of your hard drive, so you can use one computer on Windows some days, and on Linux other days.
+[^partition]: A partition is a section of storage. Every hard drive has at least one partition - that's what makes it usable. Multiple partitions allow you separate different kinds of data. For instance, you might install Linux and Windows on separate partitions, so you can boot a single computer in either operating system. Macs keep their BIOS data on a hidden partition that you can't easily access.
 
-[^cmos]: You may also hear people refer to "CMOS" in the context of BIOS - [CMOS](https://en.wikipedia.org/wiki/Nonvolatile_BIOS_memory) is the type of chip that holds the BIOS data. This isn't important in the context of this post, but is good to know about in case you come across it in the wild.
+[^cmos]: You may also hear people refer to "CMOS" in the context of BIOS - [CMOS](https://en.wikipedia.org/wiki/Nonvolatile_BIOS_memory) is the type of chip that holds the BIOS data. This isn't important in the context of this post, but we mention it in case you come across it in the wild.
 
 [^brick]: To brick a device is to render it completely inoperable. The device is, functionally, just a brick. It's a hunk of dead weight on your desk, not an actual useful electronic device any more. <br>
     It is functionally impossible to recover a bricked device.
