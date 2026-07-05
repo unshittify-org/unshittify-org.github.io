@@ -126,6 +126,13 @@ There are other purposes for accessing the BIOS menu, but we'll discuss them mor
 
 Again: You shouldn't mess with stuff in your BIOS unless you understand what you're doing.  But it's *incredibly* helpful to know how to get access to it when you need to.
 
+## Next Time
+This post was actually a detour from my Debian install post[^debian]. So that _should_ be the next post up, but we'll see. For this series, I'll add more about basic maintenance as it becomes relevant for other posts. I anticipate adding posts about updating drivers, making backups, and a few other things.[^tba]
+
+But those will come later. 
+
+See you in the next one!
+
 ---
 
 [^partition]: A partition is a section of a hard drive or memory system.  Every hard drive has at least one partition - that's what makes it usable.  Adding an extra partition allows you to separate some data and functionality, while keeping it on the same physical disc. <br>
@@ -140,3 +147,7 @@ Again: You shouldn't mess with stuff in your BIOS unless you understand what you
 [^windows-recovery-archive]: This information comes from the Microsoft Support documentation, and was accessed on May 22, 2026, from https://support.microsoft.com/en-us/windows/windows-recovery-environment-0eb14733-6301-41cb-8d26-06a12b42770b.  If the page is not available at time of viewing, it has been archived with [the Wayback Machine](https://web.archive.org/).
 
 [^mac-startup]: If this Apple Support Page is not available at time of reading, an archive should be available at the [Wayback Machine](https://web.archive.org/web/20260524214833/https://support.apple.com/en-us/102603) by the Internet Archive.
+
+[^debian]: I'll add the Debian post's link here once it's done.  It's not quite ready yet.
+
+[^tba]: If these ever materialize, I'll link here, too.
